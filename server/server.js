@@ -13,7 +13,11 @@ const data = require('./routes/data_routes');
 connectDB();
 
 // cors
-app.use(cors({ origin: 'https://mern-todo-list-frontend.onrender.com/', credentials: true }));
+const corsOptions = {
+    origin: /\.onrender\.com$/,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+};
+app.use(cors(corsOptions));
 
 // initialize middleware
 app.use(express.json({ extended: false }));

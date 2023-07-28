@@ -13,7 +13,7 @@ const data = require('./routes/data_routes');
 connectDB();
 
 // cors
-app.use(cors({ origin: process.env.HOST, credentials: true }));
+app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
 // initialize middleware
 app.use(express.json({ extended: false }));

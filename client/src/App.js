@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css'
-import Head from './toDo component/Head';
-import DataAdder from './toDo component/DataAdder';
-import ShowData from './toDo component/ShowData';
+import Head from './todoComponent/Head';
+import DataAdder from './todoComponent/DataAdder';
+import ShowData from './todoComponent/ShowData';
 import axios from 'axios';
 
 const App = () => {
